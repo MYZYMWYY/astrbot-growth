@@ -1,0 +1,43 @@
+﻿{
+  "enabled": {
+    "type": "bool",
+    "description": "启用成长系统",
+    "default": true
+  },
+  "scope_prefix": {
+    "type": "string",
+    "description": "生效范围（UMO 前缀）",
+    "hint": "留空表示所有私聊都会成长；填具体前缀则只在那一路通道生效。",
+    "default": ""
+  },
+  "interval": {
+    "type": "int",
+    "description": "反思间隔（条）",
+    "hint": "累计多少条消息触发一次反思。这里的计数按'你一条 + 它一条'各记 1。",
+    "default": 40
+  },
+  "max_self_chars": {
+    "type": "int",
+    "description": "self.md 字数上限",
+    "hint": "每轮都会注入，1500 字约合 1500 token。",
+    "default": 1500
+  },
+  "style_change_limit": {
+    "type": "float",
+    "description": "单次改写允许的变化比例",
+    "hint": "0.65 表示可变部分一次最多改 65%，锚定段永远不改。",
+    "default": 0.65
+  },
+  "report_interval_days": {
+    "type": "int",
+    "description": "变化报告间隔（天）",
+    "hint": "每隔多少天生成一份'它变了什么'的报告文件。",
+    "default": 14
+  },
+  "provider_id": {
+    "type": "string",
+    "description": "反思用的模型",
+    "hint": "留空则使用当前默认对话模型。",
+    "default": ""
+  }
+}
