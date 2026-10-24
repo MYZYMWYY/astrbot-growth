@@ -1,0 +1,8 @@
+﻿name: astrbot_plugin_growth
+display_name: 成长型自我
+desc: 给 Bot 一份会自己改写的自我描述：每 N 条对话反思一次，锚定段锁定、可变段自写，旧版本可回溯。
+version: 1.0.0
+author: MYZYMWYY
+repo: https://github.com/MYZYMWYY/astrbot-growth
+support_platforms:
+  - aiocqhttp
